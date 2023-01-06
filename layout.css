@@ -1,0 +1,7 @@
+.maingrid1 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.ned {
+  margin-bottom: -4%;
+}

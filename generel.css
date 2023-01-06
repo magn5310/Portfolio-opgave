@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  align-self: stretch;
+  object-fit: cover;
+}
+
+.bodyimg {
+  background-image: url(billeder/Baggrund.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 40% 17%;
+}
+
+header {
+  position: sticky;
+  display: flex;
+  align-items: center;
+
+  padding: 1rem 2rem;
+}
+
+.logo {
+  width: 30%;
+  margin-right: auto;
+}
+ul {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+footer {
+  background-color: rgba(1, 255, 27, 0.584);
+}
+main {
+  min-height: 100vh;
+}
+h1 {
+  color: #53ff8e;
+}
+h2 {
+  color: white;
+}
+.overskrift1 {
+  font-family: "Poppins", sans-serif;
+  margin: 5rem 0 0 1rem;
+}
