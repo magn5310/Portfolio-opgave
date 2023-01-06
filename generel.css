@@ -1,3 +1,5 @@
+/* Til Mobil */
+
 * {
   margin: 0;
   padding: 0;
@@ -54,4 +56,52 @@ h2 {
 .overskrift1 {
   font-family: "Poppins", sans-serif;
   margin: 5rem 0 0 1rem;
+}
+.ned {
+  margin-bottom: -3.5%;
+}
+ul {
+  list-style: none;
+}
+ul a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-weight: bold;
+
+  font-size: large;
+}
+ul a:hover {
+  color: #3a4c93;
+  transition: 0.2s;
+}
+
+/* til Tablet*/
+@media (min-width: 600px) {
+  .logo {
+    width: 10%;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  .ned {
+    margin-bottom: -1.1rem;
+  }
+  ul a {
+    margin-inline-start: 6rem;
+  }
+  .overskrift1 {
+    margin-top: 10rem;
+  }
+}
+/* Til Desktop */
+@media (min-width: 850px) {
+  .ned {
+    margin-bottom: -1.2rem;
+    grid-column: 2;
+    grid-row: 1/3;
+  }
 }
