@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+.nav-active {
+  color: #3a4c93;
+}
 
 img {
   width: 100%;
@@ -40,7 +43,10 @@ ul {
 }
 
 footer {
-  background-color: rgba(1, 255, 27, 0.584);
+  background-color: rgba(0, 0, 0, 0.527);
+}
+footer p {
+  color: white;
 }
 main {
   min-height: 100vh;
@@ -60,10 +66,12 @@ h2 {
 .ned {
   margin-bottom: -3.5%;
 }
+
 ul {
   list-style: none;
 }
 ul a {
+  position: relative;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   color: white;
@@ -73,7 +81,25 @@ ul a {
 }
 ul a:hover {
   color: #3a4c93;
-  transition: 0.2s;
+  transition: 0.2s ease-in-out;
+  transform-origin: left;
+}
+ul a:after {
+  content: "";
+  position: absolute;
+  background-color: #3a4c93;
+  height: 3px;
+  width: 100%;
+  left: 0;
+  bottom: -1px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.2s ease-in;
+}
+ul a:hover:after {
+  transform: scaleX(1);
+
+  transform-origin: left;
 }
 
 /* til Tablet*/
@@ -103,5 +129,9 @@ ul a:hover {
     margin-bottom: -1.2rem;
     grid-column: 2;
     grid-row: 1/3;
+  }
+  ul a {
+    margin-inline-start: 12rem;
+    font-size: larger;
   }
 }
