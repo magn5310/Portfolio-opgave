@@ -1,3 +1,10 @@
+/* variabler*/
+html {
+  --primary-clr: #53ff8e;
+  --secondary-clr: #3a4c93;
+  --neutral-clr: #fff;
+}
+
 /* Til Mobil */
 
 * {
@@ -6,7 +13,15 @@
   box-sizing: border-box;
 }
 .nav-active {
-  color: #3a4c93;
+  color: var(--secondary-clr);
+}
+h1,
+h2,
+h3,
+h5,
+p,
+a {
+  font-family: "Poppins", sans-serif;
 }
 
 img {
@@ -15,6 +30,10 @@ img {
   display: block;
   align-self: stretch;
   object-fit: cover;
+}
+body {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .bodyimg {
@@ -46,21 +65,27 @@ footer {
   background-color: rgba(0, 0, 0, 0.527);
 }
 footer p {
-  color: white;
+  color: var(--neutral-clr);
 }
 main {
   min-height: 100vh;
 }
 h1 {
-  color: #53ff8e;
+  color: var(--primary-clr);
   font-size: 1.5rem;
 }
 h2 {
-  color: white;
+  color: var(--neutral-clr);
   font-size: 1.2rem;
 }
+.porth2 {
+  color: var(--primary-clr);
+}
+
+h3 {
+  color: var(--neutral-clr);
+}
 .overskrift1 {
-  font-family: "Poppins", sans-serif;
   margin: 5rem 0 0 1rem;
 }
 .ned {
@@ -73,14 +98,14 @@ ul {
 ul a {
   position: relative;
   text-decoration: none;
-  font-family: "Poppins", sans-serif;
-  color: white;
+
+  color: var(--neutral-clr);
   font-weight: bold;
 
   font-size: large;
 }
 ul a:hover {
-  color: #3a4c93;
+  color: var(--secondary-clr);
   transition: 0.2s ease-in-out;
   transform-origin: left;
 }
@@ -122,6 +147,10 @@ ul a:hover:after {
   .overskrift1 {
     margin-top: 10rem;
   }
+  .container {
+    place-items: center;
+    background-color: transparent;
+  }
 }
 /* Til Desktop */
 @media (min-width: 850px) {
@@ -133,5 +162,8 @@ ul a:hover:after {
   ul a {
     margin-inline-start: 12rem;
     font-size: larger;
+  }
+  .container {
+    background-color: transparent;
   }
 }

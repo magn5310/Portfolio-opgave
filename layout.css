@@ -2,8 +2,63 @@
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
+
+.container {
+  display: grid;
+  place-items: center;
+  background-color: #3a4c9329;
+  margin-inline: 1.5rem;
+  padding-inline: 1.5rem;
+  margin-top: 5rem;
+  padding-block: 2rem;
+  text-align: center;
+  border-radius: 5%;
+}
+
+.gridabout1 {
+  grid-row: 1;
+  margin-bottom: 2rem;
+}
+
+.gridabout2 {
+  grid-row: 2;
+  width: 100%;
+  padding: 2rem;
+}
+/* Til Desktop */
 @media (min-width: 850px) {
   .maingrid1 {
     grid-template-columns: 1fr 1fr;
+  }
+  .container {
+    background-color: transparent;
+  }
+}
+/* til Tablet*/
+@media (min-width: 600px) {
+  .container {
+    border: solid var(--primary-clr) 0.5px;
+    border-radius: 0;
+    background-color: transparent;
+    place-items: none;
+  }
+  .gridabout2 {
+    grid-column: 2;
+    grid-row: 1;
+    padding: 1rem;
+
+    border: solid var(--primary-clr);
+    border-radius: 0 20% 0 20%;
+    border-width: 0.5px;
+  }
+
+  .gridabout1 {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: #3a4c9329;
+    margin-right: 1rem;
+    border: solid var(--primary-clr);
+    border-radius: 10% 0 10% 0;
+    border-width: 0.5px;
   }
 }
