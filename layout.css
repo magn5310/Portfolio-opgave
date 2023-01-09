@@ -84,6 +84,7 @@
   .porttext {
     display: flex;
     flex-direction: row;
+    gap: 20px;
   }
   .knapflex {
     display: flex;

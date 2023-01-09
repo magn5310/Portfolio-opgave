@@ -90,6 +90,7 @@ h2 {
   border: solid var(--primary-clr) 1px;
   background-color: #3a4c9329;
   margin-inline: 1rem;
+  margin-bottom: 1rem;
   padding: 1rem;
 }
 .outercon {
@@ -113,15 +114,21 @@ h2 {
 .knap1 a {
   color: var(--primary-clr);
   border: solid var(--primary-clr) 1px;
-  border-radius: 2rem;
+  border-radius: 0rem;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   padding-inline: 1rem;
-  background-color: var(--secondary-clr);
+  background-color: #3a4c9329;
+  font-weight: 600;
 }
-
+p {
+  line-height: 1.6rem;
+}
 .porth1 {
   margin-inline: 1rem;
+}
+.portp {
+  margin-top: 2rem;
 }
 
 h3 {
@@ -207,5 +214,17 @@ ul a:hover:after {
   }
   .container {
     background-color: transparent;
+  }
+  .fleximg {
+    width: 500px;
+    height: 400px;
+  }
+  .knap1 a {
+    font-size: 1.5rem;
+  }
+  .knap1 a:hover {
+    background-color: var(--primary-clr);
+    color: var(--secondary-clr);
+    transition: 0.5s;
   }
 }
