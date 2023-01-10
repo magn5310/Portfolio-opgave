@@ -8,6 +8,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="generel.css" />
     <link rel="stylesheet" href="layout.css" />
     <meta name="robots" content="noindex" />
@@ -18,15 +19,20 @@
       <div class="logo">
         <a href="index.html"><img src="billeder/logo.svg" alt="logo" /></a>
       </div>
-      <nav>
-        <ul>
-          <li><a class="nav-active" href="index.html">Home</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="about.html">About</a></li>
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <li class="nav-item"><a class="nav-active nav-child" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-child" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-child" href="about.html">About</a></li>
         </ul>
+        <div class="burger">
+          <span class="bar1"></span>
+          <span class="bar2"></span>
+          <span class="bar3"></span>
+        </div>
       </nav>
     </header>
-    <main class="maingrid1">
+    <main class="maingrid1 reveal">
       <div class="overskrift1">
         <h1>Magnus Robert Madsen</h1>
         <h2>- Portfolio</h2>
@@ -35,16 +41,28 @@
       <img class="ned" src="billeder/mig1.webp" alt="Mig" />
     </main>
     <footer>
-      <div>
-        <h5>Sociale Medier</h5>
-        <ul>
-          <li></li>
-          <li></li>
-        </ul>
-      </div>
-      <div>
-        <h6></h6>
+      <div class="footercontainer">
+        <div class="logofooter">
+          <a href="index.html"><img src="billeder/logo.svg" alt="logo" /></a>
+        </div>
+        <div class="footerboks">
+          <div>
+            <a href="https://www.facebook.com/magnus.the.m/" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/magnus_mans/" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+          </div>
+
+          <div class="mrm">
+            <h4>Magnus Robert Madsen - MRM</h4>
+          </div>
+          <div>
+            <h4>Kontakt</h4>
+            <p>Mail - magn5310@stud.kea.dk</p>
+            <p>Mobil - +4522786847</p>
+          </div>
+        </div>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
