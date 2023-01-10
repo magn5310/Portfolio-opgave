@@ -3,6 +3,7 @@ html {
   --primary-clr: #53ff8e;
   --secondary-clr: #3a4c93;
   --neutral-clr: #fff;
+  --secondary-clr-fade: #3a4c93a8;
 }
 
 /* Til Mobil */
@@ -37,10 +38,10 @@ body {
 }
 
 .bodyimg {
-  background-image: url(billeder/Baggrund.webp);
+  background-image: url(billeder/baggrund_1.webp);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: 40% 17%;
+  background-position: 52% 0%;
 }
 
 header {
@@ -88,7 +89,7 @@ h2 {
 .porttext {
   color: var(--neutral-clr);
   border: solid var(--primary-clr) 1px;
-  background-color: #3a4c9329;
+  background-color: var(--secondary-clr-fade);
   margin-inline: 1rem;
   margin-bottom: 1rem;
   padding: 1rem;
@@ -102,10 +103,11 @@ h2 {
   border-radius: 5%;
 }
 .fleximg {
-  width: 330px;
+  width: 500px;
   height: 250px;
   border-radius: 1rem;
   margin-top: 2rem;
+  margin-left: 10px;
 }
 .knap1 {
   margin-top: 2rem;
@@ -118,7 +120,7 @@ h2 {
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   padding-inline: 1rem;
-  background-color: #3a4c9329;
+  background-color: var(--secondary-clr-fade);
   font-weight: 600;
 }
 p {
@@ -128,7 +130,7 @@ p {
   margin-inline: 1rem;
 }
 .portp {
-  margin-top: 2rem;
+  margin-block: 2rem;
 }
 
 h3 {
@@ -138,6 +140,8 @@ h3 {
   margin: 5rem 0 0 1rem;
 }
 .ned {
+  width: 100%;
+  height: 100;
   margin-bottom: -3.5%;
 }
 
@@ -161,7 +165,7 @@ ul a:hover {
 ul a:after {
   content: "";
   position: absolute;
-  background-color: #3a4c93;
+  background-color: var(--secondary-clr);
   height: 3px;
   width: 100%;
   left: 0;
@@ -174,6 +178,12 @@ ul a:hover:after {
   transform: scaleX(1);
 
   transform-origin: left;
+}
+video {
+  width: 100%;
+}
+iframe {
+  width: 100%;
 }
 
 /* til Tablet*/
@@ -200,6 +210,9 @@ ul a:hover:after {
     place-items: center;
     background-color: transparent;
   }
+  .bodyimg {
+    background-position: 70% 10%;
+  }
 }
 /* Til Desktop */
 @media (min-width: 850px) {
@@ -216,9 +229,11 @@ ul a:hover:after {
     background-color: transparent;
   }
   .fleximg {
-    width: 500px;
-    height: 400px;
+    width: 600px;
+    height: 270px;
+    margin-left: 10px;
   }
+
   .knap1 a {
     font-size: 1.5rem;
   }
