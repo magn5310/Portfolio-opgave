@@ -60,7 +60,7 @@ h1 {
   font-weight: 700;
 }
 h2 {
-  font-weight: 600;
+  font-weight: 700;
 }
 p {
   font-weight: 400;
@@ -140,14 +140,14 @@ main {
 }
 h1 {
   color: var(--primary-clr);
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 h2 {
   color: var(--neutral-clr);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 .sectionplace {
-  margin: 0.5rem 1rem;
+  margin: 0 1rem;
 }
 .porth2 {
   color: var(--primary-clr);
@@ -361,6 +361,7 @@ iframe {
 .skillnone {
   transform: scaleX(0%);
   transform-origin: left;
+  transition: 2s;
 }
 .skills {
   height: 0.2rem;
